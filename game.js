@@ -9,6 +9,7 @@ let subtitle = document.getElementById("subtitle")
 let guessThisNumber = document.getElementById("guessThisNumber")
 let guessedNumber = document.getElementById("guessedNumber")
 let score = document.getElementById("score")
+let timer = document.getElementById("timer")
 let scoreCount = 0
 let guessValue
 
@@ -73,3 +74,7 @@ function scoring(){
 }
 
 // set a timer for how many numbers a player can guess before timer runs out
+
+
+
+
