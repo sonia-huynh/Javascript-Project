@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+    <h1>Guess My Number!</h1>
+    <div>
+       <p id = "score">Score: 0</p> 
+    </div>
+<br>
+    <div>
+        <p id="guessedNumber">Guessed Numbers: </p>
+    </div>
+    <div>
+       <p id="guessThisNumber">Guess This Number: </p>
+    </div>
+<br>
+    <div id="subtitle">Guess my number, it's something between 1 and 10!</div>
+<br>
+    <div class="container">
+        <form autocomplete="off">
+        <input type="number" id="guess" maxlength = "2" placeholder="Enter number">
+        <input type="submit" id="submit">
+        </form>
+    </div>
+
+</body>
+
+<script src="game.js"></script>
+</html>
