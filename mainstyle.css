@@ -39,7 +39,7 @@ div {
 
 .correctGuess {
     display: flex;
-    background-color: aquamarine;
+    background-color: rgb(37, 250, 179);
     font-size: 20px;
     text-align: center;
     width: 100px;
