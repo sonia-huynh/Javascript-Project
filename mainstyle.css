@@ -1,18 +1,29 @@
 h1 {
     display: flex;
     justify-content: center;
+    font-family: "Lilita One";
+    color: rgb(187, 80, 201);
+    margin-top: 100px;
 }
 
 body{
     background-color: rgb(255, 223, 229);
-    
+    font-family: "concert One";
+    color:rgb(199, 40, 127);
+    font-size: large;
     /* margin: 10px 30px 10px 30px; */
        
+}
+
+#timer {
+   color: rgb(0, 168, 42);
+   font-size: larger;
 }
 
 #score {
     display: flex;
     justify-content: center;
+    
 }
 
 div {
@@ -25,33 +36,52 @@ div {
 
 .guessThisNumber {
     font-size: 20px;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: orange;
+    background: rgb(255, 167, 84);
     width: 100px;
     height: 100px;
     padding: 10px;
-    margin-top: 80px 
     
 }
 
 .correctGuess {
     display: flex;
-    background-color: rgb(37, 250, 179);
+    background-color: rgb(132, 255, 148);
     font-size: 20px;
     text-align: center;
     width: 100px;
     height: 100px;
     padding: 10px;
-    margin-top: 80px 
+   
 }
 
 
 #submit {
-    background-color: rgb(215, 243, 250);
-    border-color: blueviolet;
+    background-color: rgb(192, 223, 243);
+    border-color: rgb(236, 254, 255);
     /* border-style: dotted; */
     border-radius: 30px;
+    color: rgb(143, 32, 194);
+    height: 35px;
+    width:80px;
+}
+
+input {
+    height: 35px;
+    width: 100px
+}
+
+#button {
+    background-color: rgb(119, 221, 109);
+    border-color: rgb(236, 254, 255);
+    /* border-style: dotted; */
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width:100px;
+    font-size: 15px ;
 }
