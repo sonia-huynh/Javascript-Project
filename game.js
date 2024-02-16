@@ -23,8 +23,14 @@ guess.disabled = true;
 
 button.addEventListener("click", ()=> {
     startTimer()
+    scoreCount = 0
+    score.innerHTML = "Score: " + scoreCount
     submit.disabled = false; 
     guess.disabled = false;
+
+    setTimeout(function () {
+        button.style.display="none"
+    }, 1000);
     
 })
 
@@ -32,7 +38,7 @@ button.addEventListener("click", ()=> {
 
 function generateRandomNumber(){
     guessThisNumber.innerHTML = "Guess This Number"
-    randomNumber = Math.floor(Math.random()*20+1) 
+    randomNumber = Math.floor(Math.random()*100+1) 
     console.log(randomNumber)
 }
 
@@ -91,7 +97,7 @@ function correctGuessTimer() {
 function scoring(){
         if (guess.value == randomNumber) {
             scoreCount ++
-            score.innerHTML = "Score:" + scoreCount 
+            score.innerHTML = "Score: " + scoreCount 
 
             if (scoreCount > highscoreCount) {
                 highscoreCount = scoreCount 
@@ -102,11 +108,11 @@ function scoring(){
 }
 
 // set a timer for how many numbers a player can guess before timer runs out
-let time = 3
+let time = 60
 timer.innerHTML = `00:${time}`
 
 function startTimer() {
-   time = 3
+    let time = 60
    let timeInterval = setInterval(() => {
         time--
         timer.innerHTML = `00:${time}`
@@ -115,7 +121,7 @@ function startTimer() {
         clearInterval(timeInterval)
         endGame()
         alert("Time is up!")
-        
+        timer.innerHTML = `00:00`        
     }
     }, 1000);
 
@@ -125,6 +131,7 @@ function startTimer() {
 function endGame(){    
     submit.disabled = true; 
     guess.disabled = true;
+    button.style.display = "block"
     
 }
 
